@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda de Cartas Coleccionables</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f4f4f4;
+      }
+      header {
+        background-color: #333;
+        color: white;
+        padding: 20px;
+        text-align: center;
+      }
+      nav {
+        background-color: #444;
+        padding: 10px;
+        text-align: center;
+      }
+      nav ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+      }
+      nav ul li {
+        display: inline;
+        margin: 0 15px;
+      }
+      nav ul li a {
+        color: white;
+        text-decoration: none;
+        font-weight: bold;
+      }
+      main {
+        padding: 20px;
+        padding-bottom: 100px; /* Espacio para el footer */
+      }
+      .productos {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        justify-content: center;
+      }
+      .producto {
+        background-color: white;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        padding: 15px;
+        width: 200px;
+        text-align: center;
+      }
+      .producto img {
+        max-width: 100%;
+        border-radius: 5px;
+      }
+      .producto h3 {
+        margin: 10px 0;
+      }
+      .producto .precio {
+        font-size: 1.2em;
+        color: #333;
+        font-weight: bold;
+        margin: 10px 0;
+      }
+      footer {
+        background-color: #333;
+        color: white;
+        text-align: center;
+        padding: 10px;
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+      }
+      #contacto {
+        margin-top: 40px;
+        padding: 20px;
+        background-color: white;
+        border-radius: 5px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      }
+      #contacto h2 {
+        margin-bottom: 20px;
+      }
+      #contacto form {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+      }
+      #contacto form input, #contacto form textarea {
+        padding: 10px;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+      }
+      #contacto form button {
+        padding: 10px;
+        background-color: #333;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <img src="logo.jpg" alt="Logo de la tienda de cartas" width="100">
+      <h1>TCG SHOP</h1>
+    </header>
+    <nav>
+      <ul>
+        <li><a href="#inicio">Inicio</a></li>
+        <li><a href="#productos">Productos</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
+    </nav>
+    <main>
+      <!-- Sección de Inicio -->
+      <section id="inicio">
+        <h2>Bienvenido a nuestra tienda</h2>
+        <p>Encuentra las mejores cartas coleccionables de Pokémon, Magic: The Gathering, Yu-Gi-Oh! y más.</p>
+      </section>
+
+      <!-- Sección de Productos -->
+      <section id="productos">
+        <h2>Nuestros Productos</h2>
+        <div class="productos">
+          <!-- Producto 1: Carta de Pokémon -->
+          <div class="producto">
+            <img src="sobre pokemon.jpg" alt="Cartas de Pokémon">
+            <h3>Sobre de cartas Pokémon</h3>
+            <p class="precio">$15.00</p>
+            <button>Comprar</button>
+          </div>
+
+          <!-- Producto 2: Carta de Magic -->
+          <div class="producto">
+            <img src="sobre magic.jpeg" alt="Cartas de Magic: The Gathering">
+            <h3>sobre de Cartas de Magic</h3>
+            <p class="precio">$15.00</p>
+            <button>Comprar</button>
+          </div>
+
+          <!-- Producto 3: Carta de Yu-Gi-Oh! -->
+          <div class="producto">
+            <img src="sobre yugioh.webp" alt="Cartas de Yu-Gi-Oh!">
+            <h3>Sobre de Cartas Yu-Gi-Oh!</h3>
+            <p class="precio">$8.00</p>
+            <button>Comprar</button>
+          </div>
+
+          <!-- Producto 4: Carta de Digimon -->
+          <div class="producto">
+            <img src="Buster box YUGI.webp" alt=" Booster Yu gi Yu-Gi-Oh">
+            <h3>Booster pack Yu-Gi-Oh</h3>
+            <p class="precio">$140.00</p>
+            <button>Comprar</button>
+          </div>
+
+          <!-- Producto 5: Carta de Dragon Ball -->
+          <div class="producto">
+            <img src="ETB pokemon.webp" alt="ETB Pokemon">
+            <h3>ETB Pokemon</h3>
+            <p class="precio">$180.00</p>
+            <button>Comprar</button>
+          </div>
+
+          <!-- Producto 6: Carta de Fútbol -->
+          <div class="producto">
+            <img src="BOOSTER MAGIC.jpeg">
+            <h3>Booster pack Magic</h3>
+            <p class="precio">$90.00</p>
+            <button>Comprar</button>
+          </div>
+          <!-- Producto 7: Deck box -->
+          <div class="producto">
+            <img src="deck.jpg">
+            <h3>Deck BOX</h3>
+            <p class="precio">$25.00</p>
+            <button>Comprar</button>
+          </div>
+          <!-- Producto 8: Album -->
+          <div class="producto">
+            <img src="Baider.jpg">
+            <h3>Album de cartas </h3>
+            <p class="precio">$55.00</p>
+            <button>Comprar</button>
+          </div>
+          <!-- Producto 9: Carta de Fútbol -->
+          <div class="producto">
+            <img src="PC.jpg">
+            <h3>Premiun collection</h3>
+            <p class="precio">$75.00</p>
+            <button>Comprar</button>
+          </div>
+          <!-- Producto 10: Carta de Fútbol -->
+          <div class="producto">
+            <img src="ULTRA.jpg">
+            <h3>ULTRA collection</h3>
+            <p class="precio">$130.00</p>
+            <button>Comprar</button>
+          </div>
+          <!-- Producto 11: Carta de Fútbol -->
+          <div class="producto">
+            <img src="Coleccion lengendaria.webp">
+            <h3>Legendary collection</h3>
+            <p class="precio">$105.00</p>
+            <button>Comprar</button>
+          </div>
+          <!-- Producto 12: Carta de Fútbol -->
+          <div class="producto">
+            <img src="sleeves.webp">
+            <h3>Protectores para cartas </h3>
+            <p class="precio">$5.00</p>
+            <button>Comprar</button>
+          </div>
+            <!-- Producto 13: Carta de Fútbol -->
+            <div class="producto">
+                <img src="DU.jpg">
+                <h3>Magic Dominada unida </h3>
+                <p class="precio">$250.00</p>
+                <button>Comprar</button>
+              </div>
+                <!-- Producto 14: Carta de Fútbol -->
+          <div class="producto">
+            <img src="Jump start.jpg">
+            <h3>Magic Salto de estrellas  </h3>
+            <p class="precio">$210.00</p>
+            <button>Comprar</button>
+          </div>
+            <!-- Producto 15: Carta de Fútbol -->
+            <div class="producto">
+                <img src="CV.jpg">
+                <h3>Magic Boza Escarlata </h3>
+                <p class="precio">$205.00</p>
+                <button>Comprar</button>
+              </div>
+        </div>
+      </section>
+
+    <!-- Pie de página -->
+    <footer>
+      <address>
+        Dirección: AV.JAVIER PRADO , LIMA, PERU<br>
+        Teléfono: +51 981 911 502<br>
+        Email: info@TCGSHOP.com
+      </address>
+      <small>&copy; 2025 Tienda de Cartas Coleccionables. Todos los derechos reservados.</small>
+    </footer>
+  </body>
+</html>
